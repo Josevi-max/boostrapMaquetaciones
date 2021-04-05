@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Música Real</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+    </style>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0
+.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min
+.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/p
+opper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.
+min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+    </style>
+
+    <link rel="icon" href="iconos/notas-musicales.png">
+
+</head>
+
+<body class="container">
+
+
+    <nav class=" row p-3 border-bottom ">
+
+        <a href="# " class="col-9">
+            <img src="logos/logotipo.png" alt="imágen" id="logo">
+            <span class="text-warning" id="titulo">Música Real</span>
+        </a>
+
+        <div class="btn-group  col-1  mt-4 fixed-top" id="menu">
+            <button class="btn btn-warning " data-toggle="dropdown">  <i class="fas fa-bars fa-2x" type="button" > </i></button>
+
+
+
+            <div class="dropdown-menu dropdown-menu-right" id="contenido">
+                <a class="dropdown-item" href="  #combina">Combinaciones</a>
+                <a class="dropdown-item" href="#audioCorto">Recortes</a>
+                <a class="dropdown-item" href="#formatos">formatos</a>
+                <a class="dropdown-item" href="#comprimo">Compresiones</a>
+                <a class="dropdown-item" href="#web">Web</a>
+
+            </div>
+        </div>
+
+
+    </nav>
+    <div class="row border-top" id="bloque">
+
+
+
+        <h1 class="col-12 mt-4 text-center">Canción original</h1>
+        <p class="texto col-12 text-center">¿Seras capaz de notar la diferencia?</p>
+        <audio class="col-6" controls> <source src="audios/Minstrel.mp3" type="audio/mp3"> </audio>
+
+        <h1 class=" col-12 text-center m-3">Filtros</h1>
+
+
+        <!--En caso de que sea un pc y no un móvil de ahí el nombre monitor-->
+        <div class="card-deck mt-3" id="monitor">
+
+            <div class="card " style="width:400px ; ">
+                <img class="card-img-top " style="height:225px " src="imagenes/eco.jpg " alt="Imágen tarjeta ">
+                <div class="card-body ">
+                    <h2 class="card-title text-warning border-bottom ">Eco</h2>
+                    <p class="card-text text-justify ">El efecto “ECO” realiza atenuaciones progresivamente del volumen del sonido siendo útil para enfatizar ciertas frases o elementos del audio, ayudando a sumar cierta importancia a determinados momentos de la canción. </p>
+                    <audio controls> 
+                            <source src="audios/Minstrel_eco.ogg " type="audio/ogg ">
+                                
+                        </audio>
+                </div>
+            </div>
+
+            <div class="card " style="width:400px">
+                <img class="card-img-top " style="height:225px" src="imagenes/click.jpg" alt="Imágen tarjeta">
+                <div class="card-body">
+                    <h2 class="card-title text-warning border-bottom">Eliminación de click</h2>
+                    <p class="card-text text-justify">El efecto “eliminación de click” es un efecto de gran utilidad pues nos ayuda a eliminar ruido de fondo y a ayudarnos a que la audición sea mejor, eliminando molestos ruidos de fondo. </p>
+                    <br>
+                    <audio controls> 
+                            <source src="audios/Minstrel_click.ogg" type="audio/ogg">
+                                
+                        </audio>
+                </div>
+
+            </div>
+
+            <div class="card " style="width:400px">
+                <img class="card-img-top" style="height:225px" src="imagenes/wah.jpg" alt="Imágen tarjeta">
+                <div class="card-body">
+                    <h2 class="card-title text-warning border-bottom">Wahwah</h2>
+                    <p class="card-text text-justify">El efecto “Wahwah” pretende que la audición circule alternativamente entre los altavoces derecho e izquierdo, haciendo que el sonido parezca que va de un lugar a otro y que por ende este sea más envolvente. </p>
+                    <br>
+                    <audio controls> 
+                            <source src="audios/Minstrel_WAH.ogg" type="audio/ogg">
+                                
+                        </audio>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!--En caso de que este en móvil-->
+        <div id="demo" class="carousel slide" data-ride="carousel" class="col-12 text-center">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <!-- The slideshow -->
+
+            <div class="carousel-inner col-12 text-center  ">
+                <div class="carousel-item active">
+                    <div class="card " style="width:400px ; ">
+                        <img class="card-img-top " style="height:225px " src="imagenes/eco.jpg " alt="Imágen tarjeta ">
+                        <div class="card-body ">
+                            <h2 class="card-title text-warning border-bottom ">Eco</h2>
+                            <p class="card-text text-justify ">El efecto “ECO” realiza atenuaciones progresivamente del volumen del sonido siendo útil para enfatizar ciertas frases o elementos del audio, ayudando a sumar cierta importancia a determinados momentos de la canción. </p>
+                            <audio controls> 
+                                    <source src="audios/Minstrel_eco.ogg " type="audio/ogg ">
+                                        
+                                </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card " style="width:400px">
+                        <img class="card-img-top" src="imagenes/wah.jpg" alt="Imágen tarjeta">
+                        <div class="card-body">
+                            <h2 class="card-title text-warning border-bottom">Wahwah</h2>
+                            <p class="card-text text-justify">El efecto “Wahwah” pretende que la audición circule alternativamente entre los altavoces derecho e izquierdo, haciendo que el sonido parezca que va de un lugar a otro y que por ende este sea más envolvente. </p>
+                            <audio controls> 
+                                    <source src="audios/Minstrel_WAH.ogg" type="audio/ogg">
+                                        
+                                </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card " style="width:400px">
+                        <img class="card-img-top " style="height:248px" src="imagenes/click.jpg" alt="Imágen tarjeta">
+                        <div class="card-body">
+                            <h2 class="card-title text-warning border-bottom">Eliminación de click</h2>
+                            <p class="card-text text-justify">El efecto “eliminación de click” es un efecto de gran utilidad pues nos ayuda a eliminar ruido de fondo y a ayudarnos a que la audición sea mejor, eliminando molestos ruidos de fondo. </p>
+                            <audio controls> 
+                                    <source src="audios/Minstrel_click.ogg" type="audio/ogg">
+                                        
+                                </audio>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev   " href="#demo" data-slide="prev">
+                    <span class="fas fa-arrow-alt-circle-left fa-2x text-dark"></span>
+
+                </a>
+                <a class="carousel-control-next  " href="#demo" data-slide="next">
+                    <span class="fas fa-arrow-alt-circle-right fa-2x text-dark"></span>
+
+                </a>
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+    <div class="row mt-3 jumbotron" id="audioCorto">
+
+
+        <h1 class="col-12  border-bottom  display-4">Recortes</h1>
+        <p class="col-12 lead ">A partir de esta parte todos los cambios que se realizaran sera sobre una extracto más corto de la canción, en la que contara con solo 30 segundos de duración.</p>
+
+        <audio controls> 
+            <source src="audios/Minstrel_30.mp3" type="audio/mp3">
+                
+        </audio>
+
+    </div>
+
+    <div class="row" id="combina">
+
+        <h1 class="col-12 text-center border-bottom display-4">Combinaciones</h1>
+
+        <p class="col-12 lead">En este apartado se van a realizar distintos tipos de combinaciones empezando desde como se escucharía el audio principal con todos los filtros anteriores a combinar el audio con filtros con el oríginal</p>
+        <!--En caso de que este en móvil-->
+        <div id="combinaciones" class="carousel slide" data-ride="carousel" class="col-12 text-center">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#combinaciones" data-slide-to="0" class="active"></li>
+                <li data-target="#combinaciones" data-slide-to="1"></li>
+                <li data-target="#combinaciones" data-slide-to="2"></li>
+            </ul>
+            <!-- The slideshow -->
+
+            <div class="carousel-inner col-12 text-center  ">
+                <div class="carousel-item active">
+                    <div class="card bg-dark" style="width:400px ; ">
+                        <img class="card-img-top " style="height:225px " src="imagenes/filtros.jpg" alt="Imágen tarjeta ">
+                        <div class="card-body ">
+                            <h2 class="card-title text-warning border-bottom text-left display-5  ">Filtros</h2>
+                            <p class="card-text text-justify text-white ">En este audio filtros se combinan todos los filtros mostrados hasta ahora de manera que podemos apreciar como "mejoran" juntos la canción o al menos la hacen sonar diferente </p>
+                            <audio controls> 
+                                <source src="audios/audioFiltros.mp3 " type="audio/mp3 ">
+                                    
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card bg-dark" style="width:400px ; ">
+                        <img class="card-img-top " style="height:225px " src="imagenes/resul01.png" alt="Imágen tarjeta ">
+                        <div class="card-body ">
+                            <h2 class="card-title text-warning border-bottom text-left display-5  ">Audio resultado</h2>
+                            <p class="card-text text-justify text-white ">¿Que te parecío el audio anterior? si comparamos ambos audios veremos como se escuchan diferente al original, presta atención al siguiente audio donde se juntan el audio anterior junto al original </p>
+                            <audio controls> 
+                                <source src="audios/audioResultado.mp3 " type="audio/mp3 ">
+                                    
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card bg-dark" style="width:400px">
+                        <img class="card-img-top " style="height:248px" src="imagenes/audioDoble.jpg" alt="Imágen tarjeta">
+                        <div class="card-body">
+                            <h2 class="card-title text-warning border-bottom text-left display-5">Resultado 2</h2>
+                            <p class="card-text text-justify text-white">En este último audio vamos a combinar lo anterior con un efecto fade in(hace que se apague poco a poco la música) y un efecto fade out (Hace que la música entre cada vez más fuerte) junto a un mensaje de voz escrito por mi</p>
+                            <audio controls> 
+                                <source src="audios/audioResultado_2.mp3" type="audio/ogg">
+                                    
+                            </audio>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev   " href="#combinaciones" data-slide="prev">
+                    <span class="fas fa-arrow-alt-circle-left  fa-2x "></span>
+
+                </a>
+                <a class="carousel-control-next  " href="#combinaciones" data-slide="next">
+                    <span class="fas fa-arrow-alt-circle-right fa-2x "></span>
+
+                </a>
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+        <!--En caso de que este en escritorio-->
+        <div class="card-deck mt-3" id="monitor">
+
+            <div class="card bg-dark" style="width:400px ; ">
+                <img class="card-img-top " style="height:225px " src="imagenes/filtros.jpg" alt="Imágen tarjeta ">
+                <div class="card-body ">
+                    <h2 class="card-title text-warning border-bottom text-left display-5  ">Filtros</h2>
+                    <p class="card-text text-justify text-white ">En este audio filtros se combinan todos los filtros mostrados hasta ahora de manera que podemos apreciar como "mejoran" juntos la canción o al menos la hacen sonar diferente </p>
+                    <br><br>
+                    <audio controls> 
+                            <source src="audios/audioFiltros.mp3 " type="audio/mp3 ">
+                                
+                        </audio>
+                </div>
+            </div>
+
+            <div class="card bg-dark" style="width:400px ; ">
+                <img class="card-img-top " style="height:225px " src="imagenes/resul01.png" alt="Imágen tarjeta ">
+                <div class="card-body ">
+                    <h2 class="card-title text-warning border-bottom text-left display-5  ">Audio resultado</h2>
+                    <p class="card-text text-justify text-white ">¿Que te parecío el audio anterior? si comparamos ambos audios veremos como se escuchan diferente al original, presta atención al siguiente audio donde se juntan el audio anterior junto al original </p>
+                    <br>
+                    <audio controls> 
+                            <source src="audios/audioResultado.mp3 " type="audio/mp3 ">
+                                
+                        </audio>
+                </div>
+            </div>
+
+
+            <div class="card bg-dark" style="width:400px">
+                <img class="card-img-top " style="height:225px" src="imagenes/audioDoble.jpg" alt="Imágen tarjeta">
+                <div class="card-body">
+                    <h2 class="card-title text-warning border-bottom text-left display-5">Resultado 2</h2>
+                    <p class="card-text text-justify text-white">En este último audio vamos a combinar lo anterior con un efecto fade in(hace que se apague poco a poco la música) y un efecto fade out (Hace que la música entre cada vez más fuerte) junto a un mensaje de voz escrito por mi</p>
+                    <audio controls> 
+                            <source src="audios/audioResultado_2.mp3" type="audio/mp3">
+                                
+                        </audio>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="row">
+
+
+            <h1 class="col-12 text-center border-bottom display-4">Formatos</h1>
+
+            <p class="col-12 lead">Hemos visto que hay distintas maneras tanto de meter filtros a un audio,como de hacer recortes en este entre otras combinaciones, ahora ha llegado el momento de aprender que clase de formatos hay</p>
+
+            <div id="formatos" class="carousel slide" data-ride="carousel" class="col-12 text-justify">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#formatos" data-slide-to="0" class="active"></li>
+                    <li data-target="#formatos" data-slide-to="1"></li>
+                    <li data-target="#formatos" data-slide-to="2"></li>
+                </ul>
+                <!-- The slideshow -->
+
+                <div class="carousel-inner col-12  ">
+                    <div class="carousel-item active">
+                        <div class="row mt-3 jumbotron" id="mp3">
+
+
+                            <h1 class="col-12  border-bottom  display-5">MP3</h1>
+                            <p class="col-12 lead ">El clásico formato mp3 es el más conocido y el que todos conocemos, este audio es el que tiene una mayor compresión y menor calidad. <br> Aquí un ejemplo de un audio mp3 de 1.62MB </p>
+
+
+                            <audio controls> 
+                            <source src="audios/audioResultado_2.mp3" type="audio/mp3">
+                                
+                        </audio>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="row mt-3 jumbotron" id="ogg">
+
+
+                            <h1 class="col-12  border-bottom  display-5">OGG</h1>
+                            <p class="col-12 lead ">El formato OGG podríamos decir de manera resumida que es como el mp3 pero mejor, tiene compresiones mayores y una calidad de sonido un poco mejor (aunque no lo suficiente para que sea notable) <br> A continuación un archivo
+                                ogg de 1.33MB
+                            </p>
+
+
+                            <audio controls> 
+                            <source src="audios/audioResultado_2.ogg" type="audio/ogg">
+                                
+                        </audio>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row mt-3 jumbotron" id="wav">
+
+
+                            <h1 class="col-12  border-bottom  display-5">WAV</h1>
+                            <p class="col-12 lead "> El formato wav es un formato de audio caracterizado por su nula compresión, teorícamente la cálidad es muy superior a los anteriores pues no hay compresión pero el peso es demencialmente superior <br> Aquí una muestra de un
+                                audio de 14.3 MB
+                            </p>
+
+
+                            <audio controls> 
+                            <source src="audios/audioResultado_2.wav" type="audio/wav">
+                                
+                        </audio>
+
+                        </div>
+                    </div>
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev   " href="#formatos" data-slide="prev">
+                        <span class="flechasCarrusel far fa-caret-square-left fa-2x  mr-5"></span>
+
+                    </a>
+                    <a class="carousel-control-next   " href="#formatos" data-slide="next">
+                        <span class="flechasCarrusel far fa-caret-square-right fa-2x   ml-5"></span>
+
+                    </a>
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+    </div>
+
+    <div class="row" id="comprimo">
+        <h1 class="col-12 text-center border-bottom display-4">Compresiones</h1>
+        <p class="col-12 text-justify lead">Cuando vamos a exportar un archivo podemos elegir el tipo de compresión, a mayor compresión menor calidad pero también es menor el peso. <br> ¿Se nota realmente la diferencia? </p>
+
+        <div class="card-deck mt-3" id="monitor">
+
+            <div class="card bg-dark" style="width:400px ; ">
+                <img class="card-img-top foto" src="imagenes/maxima.jpg" alt="Imágen tarjeta ">
+                <div class="card-body ">
+                    <h2 class="card-title nvidia border-bottom text-left display-5  ">Maximo</h2>
+                    <p class="card-text text-justify text-white ">En este caso utilizo una compresión minima, a partir de la cual el peso del archivo sera muy superior al de los demas archivos pero al calidad del sonido sera la mejor posible </p>
+                    <br>
+                    <audio controls> 
+                       <source src="audios/audioResultado_maximo.mp3 " type="audio/mp3 ">
+                    
+                      </audio>
+                </div>
+            </div>
+
+            <div class="card bg-dark" style="width:400px ; ">
+                <img class="card-img-top foto" src="imagenes/estandar.jpg" alt="Imágen tarjeta ">
+                <div class="card-body ">
+                    <h2 class="card-title nvidia border-bottom text-left display-5  ">Estandar</h2>
+                    <p class="card-text text-justify text-white ">A continuación utilizo un tipo de compresión estandar en la que se equilibra tanto la calidad del sonido como el tamaño del archivo siendo más recomendable que el anterior pues su tamaño es bastante menor </p>
+                    <audio controls> 
+                <source src="audios/audioResultado_estandar.mp3 " type="audio/mp3 ">
+                    
+            </audio>
+                </div>
+            </div>
+
+            <div class="card bg-dark" style="width:400px">
+                <img class="card-img-top foto " src="imagenes/minimo.jpg" alt="Imágen tarjeta">
+                <div class="card-body">
+                    <h2 class="card-title nvidia border-bottom text-left display-5">Minimo</h2>
+                    <p class="card-text text-justify text-white">En este último audio vamos a probar la diferencia con la maxima compresión posible, teorícamente el peso del fichero sera super reducido pero a coste de una calidad "deficiente al menos teorícamente" </p>
+                    <audio controls> 
+                          <source src="audios/audioResultado_minimo.mp3" type="audio/mp3">
+                    
+                        </audio>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--En caso de que este en móvil-->
+        <div id="compresiones" class="carousel slide" data-ride="carousel" class="col-12 text-center">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#compresiones" data-slide-to="0" class="active"></li>
+                <li data-target="#compresiones" data-slide-to="1"></li>
+                <li data-target="#compresiones" data-slide-to="2"></li>
+            </ul>
+            <!-- The slideshow -->
+
+            <div class="carousel-inner col-12 text-center  ">
+                <div class="carousel-item active">
+                    <div class="card bg-dark" style="width:400px ; ">
+                        <img class="card-img-top foto" src="imagenes/maxima.jpg" alt="Imágen tarjeta ">
+                        <div class="card-body ">
+                            <h2 class="card-title nvidia border-bottom display-5  ">Maximo</h2>
+                            <p class="card-text text-justify text-white ">En este caso utilizo una compresión minima, a partir de la cual el peso del archivo sera muy superior al de los demas archivos pero al calidad del sonido sera la mejor posible </p>
+                            <audio controls> 
+                               <source src="audios/audioResultado_maximo.mp3 " type="audio/mp3 ">
+                            
+                              </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card bg-dark" style="width:400px ; ">
+                        <img class="card-img-top foto" src="imagenes/estandar.jpg" alt="Imágen tarjeta ">
+                        <div class="card-body ">
+                            <h2 class="card-title nvidia border-bottom  display-5  ">Estandar</h2>
+                            <p class="card-text text-justify text-white ">A continuación utilizo un tipo de compresión estandar en la que se equilibra tanto la calidad del sonido como el tamaño del archivo siendo más recomendable que el anterior pues su tamaño es bastante menor </p>
+                            <audio controls> 
+                        <source src="audios/audioResultado_estandar.mp3 " type="audio/mp3 ">
+                            
+                    </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card bg-dark" style="width:400px">
+                        <img class="card-img-top foto" src="imagenes/minimo.jpg" alt="Imágen tarjeta">
+                        <div class="card-body">
+                            <h2 class="card-title nvidia border-bottom  display-5">Minimo</h2>
+                            <p class="card-text text-justify text-white">En este último audio vamos a probar la diferencia con la maxima compresión posible, teorícamente el peso del fichero sera super reducido pero a coste de una calidad "deficiente al menos teorícamente" </p>
+                            <audio controls> 
+                                  <source src="audios/audioResultado_minimo.mp3" type="audio/mp3">
+                            
+                                </audio>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev   " href="#compresiones" data-slide="prev">
+                    <span class="fas fa-arrow-alt-circle-left  fa-2x "></span>
+
+                </a>
+                <a class="carousel-control-next  " href="#compresiones" data-slide="next">
+                    <span class="fas fa-arrow-alt-circle-right fa-2x "></span>
+
+                </a>
+            </div>
+
+        </div>
+        <div class="row mt-3 jumbotron" id="conclusiones">
+
+
+            <h1 class="col-12 text-light  border-bottom display-4">Conclusiones</h1>
+            <p class="col-12 text-light text-justify tama">Tras haberme puesto las canciones por 5 min y haciendo las comparaciones entre las 3 he llegado a la conclusión de que las diferencias son mínimas, ya que no soy capaz de diferenciar cual es cual, y las escucho exactamente igual, supongo que
+                esto ira en función del tipo de canción y que en canciones en las que el artista cante se notara mejor sin embargo en canciones de este tipo en las que el sonido es “más ambiental” la diferencia es nula además de que tampoco noto diferencia
+                cuando hablo. Lo que sí que no es mínimo es el tamaño de los archivos, y es que el de mínima compresión mide casi 3 veces más que el de mínima, saliendo mucho más rentable comprimirlo a tope en esta ocasión.
+            </p>
+
+
+
+        </div>
+
+
+
+    </div>
+
+    <div class="row " id="web">
+
+        <h1 class="col-12 border-bottom display-4 text-center">Web</h1>
+
+        <p class="col-6 text-justify">Para optimizar el archivo de audio, he cambiado los hercios, al principio lo dejé casi al mínimo (11025), sin embargo, me di cuenta que se veía afectada la calidad del sonido y aquí sí que lo notaba, por lo que lo dejé a 16000. Después elegí el
+            formato de compresión ogg ya que además de ser abierto, y de tener una compresión similar a la del mp3 también es teóricamente de mayor calidad. Finalmente le puse una compresión de 3 (siendo 0 la máxima y 10 la mínima). Tras realizar todas
+            estas modificaciones el tamaño del fichero paso de 1 mega y medio a 300kB
+        </p>
+
+        <img class="col-6 " src="imagenes/web.jpg" alt="Imagenes web" id="imagenWeb">
+
+        <audio id="mimusica">
+            <source  src="audios/audioResultado_opti.ogg" type="audio/ogg">
+        </audio>
+
+        <div class="col-8 text-right ml-5">
+            <button id='bplay' class="btn btn-primary col-2 mt-3 mb-3 text-center"> <i class="fas fa-play"></i></button>
+            <button id='bpause' class="btn btn-primary col-2 mt-3 mb-3 text-center"> <i class="fas fa-pause"></i></button>
+            <button id='bsubirvol' class="btn btn-primary col-2 mt-3 mb-3 text-center "><i class="fas fa-volume-up"></i></button>
+            <button id='bbajarvol' class="btn btn-primary col-2 mt-3 mb-3 text-center"><i class="fas fa-volume-down"></i></button>
+
+
+        </div>
+
+
+    </div>
+    <a id="flecha" type="button" class="mb-3 ml-3 btn btn-warning  fixed-bottom text-center   " href="#bloque"> <i class="fas fa-arrow-up fa-2x  text-right"></i></a>
+
+</body>
+
+</html>
+
+
+<script>
+    function MiPlay() {
+        document.getElementById('mimusica').play();
+    }
+
+    function MiPause() {
+        document.getElementById('mimusica').pause();
+    }
+
+    function SubirVolumen() {
+        document.getElementById('mimusica').volume += 0.3;
+    }
+
+    function BajarVolumen() {
+        document.getElementById('mimusica').volume -= 0.3;
+    }
+
+    function iniciar() {
+        document.getElementById('bplay').addEventListener('click', MiPlay, false);
+        document.getElementById('bpause').addEventListener('click', MiPause, false);
+        document.getElementById('bsubirvol').addEventListener('click', SubirVolumen, false);
+        document.getElementById('bbajarvol').addEventListener('click', BajarVolumen, false);
+    }
+
+    window.addEventListener('load', iniciar, false);
+</script>
